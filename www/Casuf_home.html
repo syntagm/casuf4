@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Casuf_home
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/ios-like/ios-like.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="http://debug.appery.io/target/target-script-min.js#3e68be1c-8a24-4d96-b9b4-eea32e219862">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery-ui-map/jquery.ui.map.full.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/TwitterSearchJS.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/GoogleMapJS.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+        <link href="Casuf_home.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="Casuf_home.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Casuf_home" id="Casuf_home"
+        class="type-interior" data-theme="c">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader1" id="Casuf_home_mobileheader1" class="Casuf_home_mobileheader1">
+                <h1 dsid="mobileheader1">
+                    CASUF
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="Casuf_home_mobilecontainer1" name="mobilecontainer1"
+            class="Casuf_home_mobilecontainer1 ui-content" dsid="mobilecontainer1" data-theme="b">
+                <!-- mobilegrid_12 -->
+                <div class="Casuf_home_mobilegrid_12_wrapper" data-wrapper-for="mobilegrid_12">
+                    <table id="Casuf_home_mobilegrid_12" class="Casuf_home_mobilegrid_12" dsid="mobilegrid_12"
+                    name="mobilegrid_12" cellpadding=0 cellspacing=0>
+                        <col style="width:57px;" />
+                        <col style="width:auto;" />
+                        <tr class="Casuf_home_mobilegrid_12_row_0">
+                            <!-- mobilegridcell_13 -->
+                            <td id="Casuf_home_mobilegridcell_13" name="mobilegridcell_13" class="Casuf_home_mobilegridcell_13"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- menuimg_1 -->
+                                    <img class="Casuf_home_menuimg_1" src="files/views/assets/image/Icon.png" id="Casuf_home_menuimg_1"
+                                    dsid="menuimg_1" name="menuimg_1" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_14 -->
+                            <td id="Casuf_home_mobilegridcell_14" name="mobilegridcell_14" class="Casuf_home_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- menubut_1 -->
+                                    <a data-role="button" name="menubut_1" dsid="menubut_1" class="Casuf_home_menubut_1"
+                                    id="Casuf_home_menubut_1" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="false" data-theme="b" tabindex="4">
+                                    About this App
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Casuf_home_mobilegrid_12_row_1">
+                            <!-- mobilegridcell_15 -->
+                            <td id="Casuf_home_mobilegridcell_15" name="mobilegridcell_15" class="Casuf_home_mobilegridcell_15"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_21 -->
+                                    <img class="Casuf_home_mobileimage_21" src="files/views/assets/image/down.png" id="Casuf_home_mobileimage_21"
+                                    dsid="mobileimage_21" name="mobileimage_21" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_16 -->
+                            <td id="Casuf_home_mobilegridcell_16" name="mobilegridcell_16" class="Casuf_home_mobilegridcell_16"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- menubut_2 -->
+                                    <a data-role="button" name="menubut_2" dsid="menubut_2" class="Casuf_home_menubut_2"
+                                    id="Casuf_home_menubut_2" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="false" data-theme="b" tabindex="5">
+                                    CASUF Twitter
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Casuf_home_mobilegrid_12_row_2">
+                            <!-- mobilegridcell_17 -->
+                            <td id="Casuf_home_mobilegridcell_17" name="mobilegridcell_17" class="Casuf_home_mobilegridcell_17"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_23 -->
+                                    <img class="Casuf_home_mobileimage_23" src="files/views/assets/image/speech.png"
+                                    id="Casuf_home_mobileimage_23" dsid="mobileimage_23" name="mobileimage_23" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_18 -->
+                            <td id="Casuf_home_mobilegridcell_18" name="mobilegridcell_18" class="Casuf_home_mobilegridcell_18"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- connectbutton_1 -->
+                                    <a data-role="button" name="connectbutton_1" dsid="connectbutton_1" class="Casuf_home_connectbutton_1"
+                                    id="Casuf_home_connectbutton_1" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="false" data-theme="b" tabindex="6">
+                                    agriConnect
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_24 -->
+                <div class="Casuf_home_mobilegrid_24_wrapper" data-wrapper-for="mobilegrid_24">
+                    <table id="Casuf_home_mobilegrid_24" class="Casuf_home_mobilegrid_24" dsid="mobilegrid_24"
+                    name="mobilegrid_24" cellpadding=0 cellspacing=0>
+                        <col style="width:61px;" />
+                        <col style="width:auto;" />
+                        <tr class="Casuf_home_mobilegrid_24_row_0">
+                            <!-- mobilegridcell_25 -->
+                            <td id="Casuf_home_mobilegridcell_25" name="mobilegridcell_25" class="Casuf_home_mobilegridcell_25"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mapsimage -->
+                                    <img class="Casuf_home_mapsimage" src="files/views/assets/image/mappin.png" id="Casuf_home_mapsimage"
+                                    dsid="mapsimage" name="mapsimage" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_26 -->
+                            <td id="Casuf_home_mobilegridcell_26" name="mobilegridcell_26" class="Casuf_home_mobilegridcell_26"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- homemap_1 -->
+                                    <a data-role="button" name="homemap_1" dsid="homemap_1" class="Casuf_home_homemap_1"
+                                    id="Casuf_home_homemap_1" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="false" data-theme="b" tabindex="7">
+                                    Maps
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilegrid_27 -->
+                <div class="Casuf_home_mobilegrid_27_wrapper" data-wrapper-for="mobilegrid_27">
+                    <table id="Casuf_home_mobilegrid_27" class="Casuf_home_mobilegrid_27" dsid="mobilegrid_27"
+                    name="mobilegrid_27" cellpadding=0 cellspacing=0>
+                        <col style="width:61px;" />
+                        <col style="width:auto;" />
+                        <tr class="Casuf_home_mobilegrid_27_row_0">
+                            <!-- mobilegridcell_28 -->
+                            <td id="Casuf_home_mobilegridcell_28" name="mobilegridcell_28" class="Casuf_home_mobilegridcell_28"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobileimage_34 -->
+                                    <img class="Casuf_home_mobileimage_34" src="files/views/assets/image/browser.png"
+                                    id="Casuf_home_mobileimage_34" dsid="mobileimage_34" name="mobileimage_34" />
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_29 -->
+                            <td id="Casuf_home_mobilegridcell_29" name="mobilegridcell_29" class="Casuf_home_mobilegridcell_29"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- browserbutton -->
+                                    <a data-role="button" name="browserbutton" dsid="browserbutton" class="Casuf_home_browserbutton"
+                                    id="Casuf_home_browserbutton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="false" data-theme="b" tabindex="8">
+                                    Browsers
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobileimage_22 -->
+                <img class="Casuf_home_mobileimage_22" src="files/views/assets/image/logo.png" id="Casuf_home_mobileimage_22"
+                dsid="mobileimage_22" name="mobileimage_22" />
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="Casuf_home_mobilefooter1" name="mobilefooter1"
+            dsid="mobilefooter1" id="Casuf_home_mobilefooter1" data-theme="b">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:800px;" dsid="CasufBrowser" id="CasufBrowser"
+        class="type-interior" data-theme="b">
+            <!-- browserHeader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="b" name="browserHeader" id="CasufBrowser_browserHeader" class="CasufBrowser_browserHeader">
+                <h1 dsid="browserHeader">
+                    CASUF In App Browser
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="CasufBrowser_mobilecontainer" name="mobilecontainer"
+            class="CasufBrowser_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <!-- link_source -->
+                <div data-role="fieldcontain" class="CasufBrowser_link_source ">
+                    <input type="text" name="link_source" dsid="link_source" value="http://www.syntagm.co.za/casuf"
+                    placeholder="insert link here" id="CasufBrowser_link_source" tabindex="1" multiple
+                    data-theme="b" class="CasufBrowser_link_source" />
+                </div>
+                <!-- open_browser_button -->
+                <a data-role="button" name="open_browser_button" dsid="open_browser_button" class="CasufBrowser_open_browser_button"
+                id="CasufBrowser_open_browser_button" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="b" tabindex="2">
+                Open this link
+                </a>
+                <!-- browser_type_group -->
+                <div data-role="fieldcontain" class="CasufBrowser_browser_type_group" id="CasufBrowser_browser_type_group"
+                dsid="browser_type_group">
+                    <fieldset data-role="controlgroup" data-theme="b">
+                        <!-- cordova_web_view -->
+                        <span dsid="cordova_web_view" class="CasufBrowser_cordova_web_view" name="cordova_web_view">
+                            <input type="radio" name="browser_type_group" id="CasufBrowser_cordova_web_view"
+                            tabindex="3" value="_self" />
+                            <label id="CasufBrowser_cordova_web_view_label" for="CasufBrowser_cordova_web_view">
+                                WebView
+                            </label>
+                        </span>
+                        <!-- system_browser -->
+                        <span dsid="system_browser" class="CasufBrowser_system_browser" name="system_browser">
+                            <input type="radio" name="browser_type_group" id="CasufBrowser_system_browser" value="_system"
+                            />
+                            <label id="CasufBrowser_system_browser_label" for="CasufBrowser_system_browser">
+                                SystemBrowser
+                            </label>
+                        </span>
+                        <!-- in_app_browser -->
+                        <span dsid="in_app_browser" class="CasufBrowser_in_app_browser" name="in_app_browser">
+                            <input type="radio" name="browser_type_group" id="CasufBrowser_in_app_browser" checked="checked"
+                            value="- _blank" />
+                            <label id="CasufBrowser_in_app_browser_label" for="CasufBrowser_in_app_browser">
+                                inAppBrowser
+                            </label>
+                        </span>
+                    </fieldset>
+                </div>
+                <!-- html_8 -->
+                <div data-role="appery_html" name="html_8" dsid="html_8" id="CasufBrowser_html_8"
+                class="CasufBrowser_html_8">
+                    <p>
+                        You can type in
+                        <a href="http://www.syntagm.co.za/casus/locator">http://www.syntagm.co.za/casus/locator</a>
+                        &nbsp;to access the Map
+                    </p>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="CasufBrowser_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="CasufBrowser_mobilefooter" data-theme="b">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="Recover" id="Recover" class="type-interior"
+        data-theme="b">
+            <!-- recover -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="b" name="recover" id="Recover_recover" class="Recover_recover">
+                <h1 dsid="recover">
+                    Recover
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Recover_mobilecontainer" name="mobilecontainer" class="Recover_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <!-- mobilelabel_1 -->
+                <div name="mobilelabel_1" id="Recover_mobilelabel_1" dsid="mobilelabel_1" data-role="appery_label"
+                class="Recover_mobilelabel_1">
+                    Enter your username:
+                </div>
+                <!-- usernameinput_1 -->
+                <div data-role="fieldcontain" class="Recover_usernameinput_1 ">
+                    <input type="text" name="usernameinput_1" dsid="usernameinput_1" value="" placeholder="Username"
+                    id="Recover_usernameinput_1" tabindex="1" multiple data-theme="b" class="Recover_usernameinput_1"
+                    />
+                </div>
+                <!-- recoverbutton_1 -->
+                <a data-role="button" name="recoverbutton_1" dsid="recoverbutton_1" class="Recover_recoverbutton_1"
+                id="Recover_recoverbutton_1" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="b" tabindex="2">
+                Recover
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Recover_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Recover_mobilefooter" data-theme="b">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="About" id="About" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="About_mobileheader" class="About_mobileheader">
+                <h1 dsid="mobileheader">
+                    About
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="About_mobilecontainer" name="mobilecontainer" class="About_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <!-- html_17 -->
+                <div data-role="appery_html" name="html_17" dsid="html_17" id="About_html_17" class="About_html_17">
+                    <p style="text-align: center;">
+                        <span style="font-size: large;">
+                            The goal of the Cape Agricultural Sector Unity Foundation (CASUF) is to work towards
+                            the optimal integration of agriculture in this province: locally, nationally, on
+                            the African continent and internationally.&nbsp;
+                        </span>
+                    </p>
+                    <p style="text-align: center;">
+                        <span style="font-size: large;">
+                            &nbsp;
+                            <strong>
+                                Towards this end it has three main focus areas
+                            </strong>
+                        </span>
+                    </p>
+                    <ul>
+                        <li style="text-align: center;">
+                            <span style="font-size: large;">
+                                Connecting the dots across the agri-landscape.
+                            </span>
+                        </li>
+                        <li style="text-align: center;">
+                            <span style="font-size: large;">
+                                Fostering collaboration among all stakeholders.
+                            </span>
+                        </li>
+                        <li style="text-align: center;">
+                            <span style="font-size: large;">
+                                Contributing to the well-being of all agri-stakeholders.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="About_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="About_mobilefooter" data-theme="b">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:800px;" dsid="Maps" id="Maps" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="Maps_mobileheader" class="Maps_mobileheader">
+                <h1 dsid="mobileheader">
+                    Caption
+                </h1>
+                <!-- homebutton_10 -->
+                <a data-role="button" name="homebutton_10" dsid="homebutton_10" class="Maps_homebutton_10 ui-btn-right"
+                style='min-height:16px; ' id="Maps_homebutton_10" data-corners="true" data-icon="home"
+                data-iconpos="left" data-inline='true' data-mini='true' data-theme="b" tabindex="9">
+                &nbsp;
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Maps_mobilecontainer" name="mobilecontainer" class="Maps_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <!-- google_map -->
+                <div id="Maps_google_map" dsid="google_map" name="google_map" tiggzitype="object"
+                apperytype="object" class='Maps_google_map' style='width:100%;'>
+                    <img class='Maps_google_map' src="http://assets1.geocommons.com/d51ab1366bec6a2c4954db979e5921bd4cc140db/images/no_preview_map.png?1311276822"
+                    />
+                </div>
+                <ul data-role="listview" id="Maps_google_map_markers" name="google_map_markers"
+                dsid="google_map_markers" style="display:none">
+                    <!-- marker_2 -->
+                    <li id="Maps_marker_2" name="marker_2" dsid="marker_2" tiggzitype="marker" apperytype="marker"
+                    rendered="false" latitude="" longitude="" text="" address="" show_info="true" style="display:none">
+                        <div id="Maps_marker_2_infoWindow" name="marker_2_infoWindowContent" class='Maps_marker_2'>
+                        </div>
+                    </li>
+                </ul>
+                <!-- get_directions -->
+                <a data-role="button" name="get_directions" dsid="get_directions" class="Maps_get_directions"
+                id="Maps_get_directions" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="b" tabindex="2">
+                Get Directions
+                </a>
+                <!-- from -->
+                <div data-role="fieldcontain" class="Maps_from ">
+                    <input type="text" name="from" dsid="from" value="" placeholder="From" id="Maps_from"
+                    tabindex="3" multiple data-theme="b" class="Maps_from" />
+                </div>
+                <!-- to -->
+                <div data-role="fieldcontain" class="Maps_to ">
+                    <input type="text" name="to" dsid="to" value="" placeholder="To" id="Maps_to" tabindex="4"
+                    multiple data-theme="b" class="Maps_to" />
+                </div>
+                <!-- place_marker -->
+                <a data-role="button" name="place_marker" dsid="place_marker" class="Maps_place_marker"
+                id="Maps_place_marker" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="b" tabindex="5">
+                Place Marker
+                </a>
+                <!-- marker_location -->
+                <div data-role="fieldcontain" class="Maps_marker_location ">
+                    <input type="text" name="marker_location" dsid="marker_location" value="" placeholder="Cape Town, Malmesbury, Wellington"
+                    id="Maps_marker_location" tabindex="6" multiple data-theme="b" class="Maps_marker_location"
+                    />
+                </div>
+                <!-- show_traffic -->
+                <a data-role="button" name="show_traffic" dsid="show_traffic" class="Maps_show_traffic"
+                id="Maps_show_traffic" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="b" tabindex="7">
+                Show Traffic
+                </a>
+                <!-- get_markers -->
+                <a data-role="button" name="get_markers" dsid="get_markers" class="Maps_get_markers"
+                id="Maps_get_markers" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="b" tabindex="8">
+                Get markers from dB
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Maps_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Maps_mobilefooter" data-theme="b">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="chatScreen" id="chatScreen"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="chatScreen_mobileheader" class="chatScreen_mobileheader">
+                <h1 dsid="mobileheader">
+                    Chat
+                </h1>
+                <!-- logoutButton -->
+                <a data-role="button" name="logoutButton" dsid="logoutButton" class="chatScreen_logoutButton ui-btn-right"
+                id="chatScreen_logoutButton" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-inline='true' data-mini='true' data-theme="b" tabindex="5">
+                Logout
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="chatScreen_mobilecontainer" name="mobilecontainer"
+            class="chatScreen_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <!-- messageField -->
+                <div data-role="fieldcontain" class="chatScreen_messageField ">
+                    <input type="text" name="messageField" dsid="messageField" value="" placeholder="Message"
+                    id="chatScreen_messageField" tabindex="1" multiple data-theme="b" class="chatScreen_messageField"
+                    />
+                </div>
+                <!-- mobilegrid_2 -->
+                <div class="chatScreen_mobilegrid_2_wrapper" data-wrapper-for="mobilegrid_2">
+                    <table id="chatScreen_mobilegrid_2" class="chatScreen_mobilegrid_2" dsid="mobilegrid_2"
+                    name="mobilegrid_2" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="chatScreen_mobilegrid_2_row_0">
+                            <!-- mobilegridcell_3 -->
+                            <td id="chatScreen_mobilegridcell_3" name="mobilegridcell_3" class="chatScreen_mobilegridcell_3"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- updateButton -->
+                                    <a data-role="button" name="updateButton" dsid="updateButton" class="chatScreen_updateButton"
+                                    id="chatScreen_updateButton" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="true" data-theme="b" tabindex="2">
+                                    Update
+                                    </a>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_4 -->
+                            <td id="chatScreen_mobilegridcell_4" name="mobilegridcell_4" class="chatScreen_mobilegridcell_4"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- sendButton -->
+                                    <a data-role="button" name="sendButton" dsid="sendButton" class="chatScreen_sendButton"
+                                    id="chatScreen_sendButton" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                    data-mini="true" data-theme="b" tabindex="3">
+                                    Send
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- html_10 -->
+                <div data-role="appery_html" name="html_10" dsid="html_10" id="chatScreen_html_10"
+                class="chatScreen_html_10">
+                    <!-- authorField -->
+                    <div name="authorField" id="chatScreen_authorField" dsid="authorField" data-role="appery_label"
+                    class="chatScreen_authorField">
+                    </div>
+                    <!-- dateField -->
+                    <div name="dateField" id="chatScreen_dateField" dsid="dateField" data-role="appery_label"
+                    class="chatScreen_dateField">
+                    </div>
+                    <!-- textField -->
+                    <div name="textField" id="chatScreen_textField" dsid="textField" data-role="appery_label"
+                    class="chatScreen_textField">
+                    </div>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="chatScreen_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="chatScreen_mobilefooter" data-theme="b">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="Register" id="Register" class="type-interior"
+        data-theme="b">
+            <!-- register -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="b" name="register" id="Register_register" class="Register_register">
+                <h1 dsid="register">
+                    Register
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Register_mobilecontainer" name="mobilecontainer" class="Register_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <!-- mobilelabel_1 -->
+                <div name="mobilelabel_1" id="Register_mobilelabel_1" dsid="mobilelabel_1" data-role="appery_label"
+                class="Register_mobilelabel_1">
+                    Enter your email:
+                </div>
+                <!-- enteremail_1 -->
+                <div data-role="fieldcontain" class="Register_enteremail_1 ">
+                    <input type="text" name="enteremail_1" dsid="enteremail_1" value="" placeholder="Email"
+                    id="Register_enteremail_1" tabindex="1" multiple data-theme="b" class="Register_enteremail_1"
+                    />
+                </div>
+                <!-- registerbutton_1 -->
+                <a data-role="button" name="registerbutton_1" dsid="registerbutton_1" class="Register_registerbutton_1"
+                id="Register_registerbutton_1" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="b" tabindex="2">
+                Register
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Register_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Register_mobilefooter" data-theme="b">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="logIn" id="logIn" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="logIn_mobileheader" class="logIn_mobileheader">
+                <h1 dsid="mobileheader">
+                    Log In
+                </h1>
+                <!-- mainButton -->
+                <a data-role="button" name="mainButton" dsid="mainButton" class="logIn_mainButton ui-btn-right"
+                style='min-height:16px; ' id="logIn_mainButton" data-corners="false" data-icon="home"
+                data-iconpos="left" data-inline='true' data-mini='true' data-theme="b" tabindex="4">
+                &nbsp;
+                </a>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="logIn_mobilecontainer" name="mobilecontainer" class="logIn_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <!-- mobilelabel_1 -->
+                <div name="mobilelabel_1" id="logIn_mobilelabel_1" dsid="mobilelabel_1" data-role="appery_label"
+                class="logIn_mobilelabel_1">
+                    Login:
+                </div>
+                <!-- loginField -->
+                <div data-role="fieldcontain" class="logIn_loginField ">
+                    <input type="text" name="loginField" dsid="loginField" value="" placeholder="Login"
+                    id="logIn_loginField" tabindex="1" multiple data-theme="b" class="logIn_loginField"
+                    />
+                </div>
+                <!-- mobilelabel_3 -->
+                <div name="mobilelabel_3" id="logIn_mobilelabel_3" dsid="mobilelabel_3" data-role="appery_label"
+                class="logIn_mobilelabel_3">
+                    Password:
+                </div>
+                <!-- passwordField -->
+                <div data-role="fieldcontain" class="logIn_passwordField ">
+                    <input type="password" name="passwordField" dsid="passwordField" value="" placeholder="Password"
+                    id="logIn_passwordField" tabindex="2" multiple data-theme="b" class="logIn_passwordField"
+                    />
+                </div>
+                <!-- loginButton -->
+                <a data-role="button" name="loginButton" dsid="loginButton" class="logIn_loginButton"
+                id="logIn_loginButton" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="b" tabindex="3">
+                Log In
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="logIn_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="logIn_mobilefooter" data-theme="b">
+            </div>
+        </div>
+        <div data-role="page" style="min-height:480px;" dsid="Twitter" id="Twitter" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="Twitter_mobileheader" class="Twitter_mobileheader">
+                <h1 dsid="mobileheader">
+                    CASUF Twitter
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Twitter_mobilecontainer" name="mobilecontainer" class="Twitter_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <!-- searchInput -->
+                <div data-role="fieldcontain" class="Twitter_searchInput ">
+                    <input type="text" name="searchInput" dsid="searchInput" value="" placeholder="Input #casuf or a keyword for search"
+                    id="Twitter_searchInput" tabindex="1" multiple data-theme="b" class="Twitter_searchInput"
+                    />
+                </div>
+                <!-- searchButton -->
+                <a data-role="button" name="searchButton" dsid="searchButton" class="Twitter_searchButton"
+                id="Twitter_searchButton" data-corners="false" data-icon="none" data-iconpos='nowhere'
+                data-mini="false" data-theme="b" tabindex="2">
+                Search Twitter
+                </a>
+                <!-- mobilegrid_3 -->
+                <div class="Twitter_mobilegrid_3_wrapper" data-wrapper-for="mobilegrid_3">
+                    <table id="Twitter_mobilegrid_3" class="Twitter_mobilegrid_3" dsid="mobilegrid_3"
+                    name="mobilegrid_3" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <tr class="Twitter_mobilegrid_3_row_0">
+                            <!-- outputGrid_1 -->
+                            <td id="Twitter_outputGrid_1" name="outputGrid_1" class="Twitter_outputGrid_1" colspan=1
+                            rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- innerGrid -->
+                                    <div class="Twitter_innerGrid_wrapper" data-wrapper-for="innerGrid">
+                                        <table id="Twitter_innerGrid" class="Twitter_innerGrid" dsid="innerGrid" name="innerGrid"
+                                        cellpadding=0 cellspacing=0>
+                                            <col style="width:79px;" />
+                                            <col style="width:auto;" />
+                                            <tr class="Twitter_innerGrid_row_0">
+                                                <!-- mobilegridcell_11 -->
+                                                <td id="Twitter_mobilegridcell_11" name="mobilegridcell_11" class="Twitter_mobilegridcell_11"
+                                                colspan=1 rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- tweetPicture -->
+                                                        <img class="Twitter_tweetPicture" src="files/resources/image/no-image.jpg" id="Twitter_tweetPicture"
+                                                        dsid="tweetPicture" name="tweetPicture" />
+                                                    </div>
+                                                </td>
+                                                <!-- innerGrid_1 -->
+                                                <td id="Twitter_innerGrid_1" name="innerGrid_1" class="Twitter_innerGrid_1" colspan=1
+                                                rowspan=1>
+                                                    <div class="cell-wrapper">
+                                                        <!-- tweetFrom -->
+                                                        <div name="tweetFrom" id="Twitter_tweetFrom" dsid="tweetFrom" data-role="appery_label"
+                                                        class="Twitter_tweetFrom">
+                                                            Label
+                                                        </div>
+                                                        <!-- tweetTime -->
+                                                        <div name="tweetTime" id="Twitter_tweetTime" dsid="tweetTime" data-role="appery_label"
+                                                        class="Twitter_tweetTime">
+                                                            Label
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Twitter_mobilegrid_3_row_1">
+                            <!-- tweetText_1 -->
+                            <td id="Twitter_tweetText_1" name="tweetText_1" class="Twitter_tweetText_1" colspan=1
+                            rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- tweetText -->
+                                    <div name="tweetText" id="Twitter_tweetText" dsid="tweetText" data-role="appery_label"
+                                    class="Twitter_tweetText">
+                                        Label
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Twitter_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Twitter_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

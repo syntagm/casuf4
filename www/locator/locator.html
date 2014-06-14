@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map Example</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/map.css" />
+  </head>
+
+  <body>
+    
+    <div id="store-locator-container">
+      <div id="page-header">
+        <h1>Using the Western Cape as an Example</h1>
+        <p>We used locations around Paarl and the Boland. So, for example, Stellenbosch, Klipheuwel, Malmesbury, etc. would be good for testing the functionality. 
+        You can use just the city as the address - ex: Paarl, ZA.</p>
+      </div>
+      
+      <div id="form-container">
+        <form id="user-location" method="post" action="#">
+            <div id="form-input">
+              <label for="address">Enter location:</label>
+              <input type="text" id="address" name="address" />
+             </div>
+            
+            <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div id="map-container">
+        <div id="loc-list">
+            <ul id="list"></ul>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/handlebars-1.0.0.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/jquery.storelocator.js"></script>
+      <script>
+        $(function() {
+          $('#map-container').storeLocator();
+        });
+      </script>
+
+  </body>
+</html>

@@ -1,0 +1,22 @@
+
+
+API consumer key	 vuojhT7Ms2sV8lFycF3iW49JH (manage API keys)
+
+API secret consumer key	r4zDgTe6en4cYP4QT9jggd1Oi0IN23jbSOTp3wkcHs8RugY2HD
+
+Owner ID	2485334468
+
+Access token	2485334468-NEi1uMaeoau20iRrNllA2RwR7q3E9OnqWQcBUSj
+
+Access token secret	qi2ytRbIXyC5dRU3OmTZv70SfSJVZrhYooFQLOLuC4ET7
+
+Owner	Syntagm
+
+vuojhT7Ms2sV8lFycF3iW49JH:r4zDgTe6en4cYP4QT9jggd1Oi0IN23jbSOTp3wkcHs8RugY2HD
+
+dnVvamhUN01zMnNWOGxGeWNGM2lXNDlKSDpyNHpEZ1RlNmVuNGNZUDRRVDlqZ2dkMU9pMElOMjNqYlNPVHAzd2tjSHM4UnVnWTJIRA==
+
+
+
+
+
